@@ -1,6 +1,6 @@
 const express = require("express");
 const { connect } = require("./src/Services/Connexion");
-const registerRoute = require("./src/Controller/routes/user");
+const registerRoute = require("./src/Controller/user");
 const listingRoute = require("./src/Controller/routes/listing");
 const app = express();
 const PORT = 3000;
