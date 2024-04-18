@@ -64,7 +64,7 @@ const deleteListing = async (request, response) => {
   try {
     let id = new ObjectId(request.params.id);
     let result = await client
-      .db("express-api")
+      .db("World")
       .collection("user")
       .deleteOne({ _id: id });
     if (result.deletedCount === 1) {

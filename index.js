@@ -1,13 +1,15 @@
 const express = require("express");
 const { connect } = require("./src/Services/Connexion");
-const registerRoute = require("./src/Controller/user");
-const listingRoute = require("./src/Controller/routes/listing");
+const user = require("./src/Controller/routes/user");
+const listing = require("./src/Controller/routes/listing");
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-app.use("/", registerRoute);
-app.use("/", listingRoute);
+app.use(cors());
+app.use("/", user);
+app.use("/", listing);
 
 connect("mongodb://127.0.0.1:27017", (error) => {
   if (error) {
