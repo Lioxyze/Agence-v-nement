@@ -11,6 +11,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./assets/styles/components/accueil.css" />
+        <link rel="stylesheet" href="alllisting.css" />
     </head>
     <body>
         <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
@@ -46,9 +47,38 @@
                                 class="nav-link active"
                                 aria-current="page"
                                 href="#"
-                                >Docs</a
+                                >Listing</a
                             >
                         </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Partner</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Discount</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Contact</a
+                            >
+                        </li>
+                        <img
+                            src="../front/image/logo-removebg-preview.png"
+                            height="50"
+                            class="logo"
+                        />
                     </ul>
                     <div class="d-flex p-2 rid gap-3">
                         <a href="./login.html">
@@ -73,14 +103,82 @@
                 </div>
             </div>
         </nav>
-        <h1 class="my-6 w-full font-bold text-orange-400 text-center text-2xl">
-            Toutes nos annonces :
+        <h1 class="my-6 w-full font-bold text-orange-400 text-center text-2xlr">
+            All our ads :
         </h1>
         <a class="d-flex justify-content-center" href="./createListing.html"
             ><button type="button" class="btn btn-primary">
-                Nouvelle Annonce
+                New listing
             </button></a
         >
+
+        <div class="d-flex flex-row mb-3 justify-content-center mx-auto p-5">
+            <div class="card" style="width: 18rem">
+                <img
+                    src="../front/image/japon.jpg"
+                    class="card-img-top"
+                    alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Japon</h5>
+                    <p class="card-text">
+                        Situé à Takachiho, à moins de 2,2 km de l'aquarium de
+                        poissons d'eau douce des gorges de Takachiho et à 8 km
+                        du sanctuaire d'Amanoiwato, le Solest Takachiho Hotel
+                        propose un restaurant, ainsi qu'une connexion Wi-Fi et
+                        un parking privé gratuits. Il dispose d'une réception
+                        ouverte 24h/24 et d'une bagagerie.
+                    </p>
+                    <p>Price : 3000 $</p>
+                    <a href="#" class="btn btn-primary">Show listing</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem">
+                <img
+                    src="../front/image/mexique.jpg"
+                    class="card-img-top"
+                    alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Mexique</h5>
+                    <p class="card-text">
+                        Situé à Tepatitlán de Morelos, le TH HOTEL & VIVIENDA
+                        possède une salle de sport, un jardin, un salon commun
+                        et une terrasse. Doté d'un restaurant, cet hôtel 4
+                        étoiles propose des chambres climatisées avec connexion
+                        Wi-Fi gratuite et salle de bains privative. Vous
+                        bénéficierez d'un parking privé gratuit et d'un service
+                        de navette aéroport payant.
+                    </p>
+                    <p>Price : 3000 $</p>
+                    <a href="#" class="btn btn-primary">Show listing</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem">
+                <img
+                    src="../front/image/paris.webp"
+                    class="card-img-top"
+                    alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">
+                        Situé à Paris, à 1,2 km de la station de métro Pigalle
+                        et à 500 mètres du Sacré-Cœur, l'établissement Au cœur
+                        de Montmartre dispose de la climatisation. Il se trouve
+                        à environ 1,4 km de la gare du Nord, à 2 km de la gare
+                        de l'Est et à 2,9 km de la gare Saint-Lazare. Une
+                        connexion Wi-Fi est disponible gratuitement dans
+                        l'ensemble de l'établissement et la salle de concert La
+                        Cigale se trouve à 1,2 km.
+                    </p>
+                    <p>Price : 3000 $</p>
+                    <a href="#" class="btn btn-primary">Show listing</a>
+                </div>
+            </div>
+        </div>
 
         <div class="test">
             <div class="container-fluid">
@@ -141,17 +239,11 @@
                                                 class="text-uppercase fw-bold mb-4"
                                             >
                                                 <i class="fas fa-gem me-3"></i
-                                                >Shop Moto
+                                                >World
                                             </h6>
                                             <p>
                                                 Lorem ipsum dolor, sit amet
                                                 consectetur adipisicing elit.
-                                                Quas accusamus quo tempora
-                                                accusantium quia incidunt
-                                                praesentium, ea ex in facere
-                                                totam, molestias eveniet. Nobis
-                                                natus nam ullam laudantium,
-                                                architecto pariatur?
                                             </p>
                                         </div>
                                         <!-- Grid column -->
@@ -166,16 +258,6 @@
                                             >
                                                 Price
                                             </h6>
-                                            <p>
-                                                <a href="#!" class="text-reset"
-                                                    >Price</a
-                                                >
-                                            </p>
-                                            <p>
-                                                <a href="#!" class="text-reset"
-                                                    >Price</a
-                                                >
-                                            </p>
                                             <p>
                                                 <a href="#!" class="text-reset"
                                                     >Price</a
@@ -209,16 +291,6 @@
                                                     >Settings</a
                                                 >
                                             </p>
-                                            <p>
-                                                <a href="#!" class="text-reset"
-                                                    >Orders</a
-                                                >
-                                            </p>
-                                            <p>
-                                                <a href="#!" class="text-reset"
-                                                    >Help</a
-                                                >
-                                            </p>
                                         </div>
                                         <!-- Grid column -->
 
@@ -242,18 +314,6 @@
                                                 ></i>
                                                 info@example.com
                                             </p>
-                                            <p>
-                                                <i
-                                                    class="fas fa-phone me-3"
-                                                ></i>
-                                                + 01 234 567 88
-                                            </p>
-                                            <p>
-                                                <i
-                                                    class="fas fa-print me-3"
-                                                ></i>
-                                                + 01 234 567 89
-                                            </p>
                                         </div>
                                         <!-- Grid column -->
                                     </div>
@@ -267,7 +327,7 @@
                                 class="text-center p-4"
                                 style="background-color: rgba(0, 0, 0, 0.05)"
                             >
-                                © 2021 Copyright:
+                                © 2023 Copyright:
                                 <a
                                     class="text-reset fw-bold"
                                     href="https://mdbootstrap.com/"

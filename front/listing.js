@@ -15,8 +15,8 @@ getAllListings()
 async function createListing() {
     let title = document.querySelector('.title').value
     let description = document.querySelector('.description').value
-    let price = document.querySelector('.price').value
     let image = document.querySelector('.image').value
+    let price = document.querySelector('.price').value
     let category = document.querySelector('.category').value
     let userId = window.localStorage.getItem('id')
 
