@@ -48,7 +48,7 @@ const updatelisting = async (request, response) => {
 
 const getAlllisting = async (request, response) => {
   try {
-    let apiRequest = client.db("World").collection("user").find();
+    let apiRequest = client.db("World").collection("listing").find();
     let users = await apiRequest.toArray();
     if (users && users.length > 0) {
       response.status(200).json(users);
