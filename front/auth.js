@@ -32,12 +32,14 @@ async function handleRegister() {
     let password = document.querySelector('.password').value
     let firstName = document.querySelector('.firstName').value
     let lastName = document.querySelector('.lastName').value
+    let userId = window.localStorage.getItem('id')
 
     let user = {
         email: email,
         password: password,
         firstName: firstName,
         lastName: lastName,
+        userId: userId,
     }
 
     let request = {
@@ -52,6 +54,7 @@ async function handleRegister() {
     let response = await apiRequest
     console.log(response)
     if (response.status === 200) {
+        console.log(response)
         window.location.href = './login.html'
     }
 }
